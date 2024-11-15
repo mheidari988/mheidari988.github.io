@@ -3,30 +3,406 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Reza Heidari's Portfolio</title>
+    <title>Reza Heidari - Senior Dot Net Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
     <style>
       body {
-        font-family: Arial, sans-serif;
-        text-align: center;
-        background-color: #f0f0f0;
-        margin: 0;
-        padding: 0;
-      }
-      .container {
-        margin-top: 50px;
-      }
-      h1 {
-        color: #333;
-      }
-      p {
-        color: #666;
+        font-family: "Inter", sans-serif;
       }
     </style>
   </head>
-  <body>
-    <div class="container">
-      <h1>Welcome to Reza Heidari's Portfolio</h1>
-      <p>We are currently under construction. Please check back soon!</p>
-    </div>
+  <body class="bg-gray-50 text-gray-900">
+    <header class="bg-gradient-to-r from-blue-500 to-purple-600 p-6 text-white">
+      <div class="container mx-auto flex justify-between items-center">
+        <h1 class="text-4xl font-bold">Reza Heidari</h1>
+        <nav>
+          <a href="#profile" class="hover:underline mx-2">Profile</a>
+          <a href="#skills" class="hover:underline mx-2">Skills</a>
+          <a href="#opensource" class="hover:underline mx-2">Open Source</a>
+          <a href="#experience" class="hover:underline mx-2">Experience</a>
+          <a href="#education" class="hover:underline mx-2">Education</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container mx-auto mt-8 px-4">
+      <section id="profile" class="mb-12 text-center">
+        <h2 class="text-3xl font-bold mb-4 text-blue-600">Profile</h2>
+        <p class="text-lg leading-relaxed">
+          Senior Dot Net Developer (Heavy-Backend) with 10+ years of experience
+          in software solutions, specializing in backend, microservices
+          architecture, cloud technologies, and clean architecture principles.
+          Proven expertise in designing scalable systems, APIs and databases,
+          optimizing performance, and delivering high-quality, reliable code for
+          multinational companies. Open-source contributor and team leader with
+          a passion for mentoring and developing efficient, robust applications.
+        </p>
+      </section>
+
+      <section id="skills" class="mb-12">
+        <h2 class="text-3xl font-bold mb-4 text-purple-600 text-center">
+          Technical Skills
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="bg-white rounded-lg shadow-lg p-6">
+            <h3 class="font-semibold text-blue-500">Languages & Frameworks</h3>
+            <p>
+              C#, .NET Core, ASP.NET, API, Razor, Blazor, TypeScript,
+              JavaScript, Angular, React
+            </p>
+          </div>
+          <div class="bg-white rounded-lg shadow-lg p-6">
+            <h3 class="font-semibold text-blue-500">Databases</h3>
+            <p>
+              Database Design, T-SQL, SQL Server, PostgreSQL, MySQL, Redis,
+              Elasticsearch, NoSQL, LINQ, EF Core, Dapper
+            </p>
+          </div>
+          <div class="bg-white rounded-lg shadow-lg p-6">
+            <h3 class="font-semibold text-blue-500">Cloud & DevOps</h3>
+            <p>
+              Azure App Services, Azure PostgreSQL, Azure SQL Database, Azure
+              Cosmos DB, Azure Functions, Azure Storage, GitHub Actions, CICD
+              Pipelines, Linux, Docker, IIS, Windows Server
+            </p>
+          </div>
+          <div class="bg-white rounded-lg shadow-lg p-6">
+            <h3 class="font-semibold text-blue-500">Libraries & Tools</h3>
+            <p>
+              XUnit, FluentValidation, Moq, NSubstitute, AutoMapper, Refit,
+              MediatR, Git, GitHub, GitLab, SourceTree, JIRA, Confluence, ABP
+              Framework, Swagger, NSwag, Newtonsoft.Json, Polly, MassTransit,
+              IdentityServer
+            </p>
+          </div>
+          <div class="bg-white rounded-lg shadow-lg p-6">
+            <h3 class="font-semibold text-blue-500">Monitoring & Messaging</h3>
+            <p>
+              Serilog, Seq, Redis, Hangfire, Grafana, GrayLog, RabbitMQ,
+              Postman, Azure Monitor
+            </p>
+          </div>
+          <div class="bg-white rounded-lg shadow-lg p-6">
+            <h3 class="font-semibold text-blue-500">
+              Architecture & Design Patterns
+            </h3>
+            <p>
+              OOP, Design Patterns, MVC, MVVM, CQRS, DDD, Clean Architecture,
+              SOLID Principles, Microservices, Event-Driven Architecture
+            </p>
+          </div>
+          <div class="bg-white rounded-lg shadow-lg p-6">
+            <h3 class="font-semibold text-blue-500">Languages</h3>
+            <p>English (C1), Turkish (C1), Persian (Native)</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="opensource" class="mb-12">
+        <h2 class="text-3xl font-bold mb-4 text-blue-600 text-center">
+          Open Source / Freelance
+        </h2>
+        <div class="bg-white rounded-lg shadow-lg p-6 mb-6">
+          <h3 class="font-bold text-purple-500">Altura CMS (Headless)</h3>
+          <ul class="list-disc pl-5">
+            <li>
+              Dynamic Content Management: Developing a headless CMS enabling the
+              creation, management, and customization of content types and
+              fields with Blazor UI.
+            </li>
+            <li>
+              Automated Database Schema Creation: Implementing a system that
+              automatically generates and manages database schemas alongside
+              metadata.
+            </li>
+            <li>
+              Automated API Generation: a framework that automatically generates
+              RESTful API endpoints.
+            </li>
+            <li>
+              CLI for Backend Project Code Generation: a CLI tool that automates
+              backend project code generation in monolith and multi-layer .Net
+              Core solution.
+            </li>
+          </ul>
+        </div>
+        <div class="bg-white rounded-lg shadow-lg p-6">
+          <h3 class="font-bold text-purple-500">
+            Fleet Management & Tire Tracking System
+          </h3>
+          <ul class="list-disc pl-5">
+            <li>
+              Multi-Tenant Architecture: Developed a robust system capable of
+              managing multiple tenants (Fleets).
+            </li>
+            <li>
+              SAP Integration & Standalone Mode: Engineered the application to
+              operate in both SAP-integrated and standalone modes.
+            </li>
+            <li>
+              Advanced Tire Operations Management: Implemented detailed
+              workflows for tire-related operations, reporting, notifications in
+              tenant and host level.
+            </li>
+            <li>
+              CQRS and Clean Architecture: Applied CQRS architecture and Clean
+              Architecture best practices.
+            </li>
+            <li>
+              PostgreSQL & EF Core Integration: Leveraged PostgreSQL for
+              efficient database management.
+            </li>
+            <li>
+              CI/CD Pipeline & Azure Deployment: Created a CI/CD pipeline for
+              automated deployment using GitHub Actions, deploying to Azure App
+              Services, and integrated Azure Blob Storage for file management.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="experience" class="mb-12">
+        <h2 class="text-3xl font-bold mb-4 text-purple-600 text-center">
+          Work Experience
+        </h2>
+        <div class="bg-white rounded-lg shadow-lg p-6 mb-6">
+          <h3 class="font-bold text-blue-500">
+            Senior Dot Net Developer - Memorial Healthcare Group
+          </h3>
+          <p>Romania (Remote) | 02/2023 - Current</p>
+          <ul class="list-disc pl-5">
+            <li>
+              Increased System Performance by 40%: Implemented proper Restful
+              APIs, integrated Redis for caching, and optimized database
+              queries.
+            </li>
+            <li>
+              Reduced API Response Time by 50%: Integrated Elasticsearch and
+              refactored legacy APIs for internal search system by proper
+              indexing of documents.
+            </li>
+            <li>
+              Successful Migration to .Net Core 8.0: Led the migration of legacy
+              applications from .Net Core 2.2 to the .Net Core 8.0 with zero
+              downtime.
+            </li>
+            <li>
+              Mentored and Developed a High-Performing Team: Led to a 30%
+              increase in code quality by applying Clean Architecture, CQRS and
+              SOLID principles.
+            </li>
+            <li>
+              Enhanced User Experience by 60%: Led the migration from old
+              scrambled codes of Razor Pages to React Next.js server-side
+              rendering, resulting in improved loading speed.
+            </li>
+            <li>
+              Solved Long-Standing CMS Issues: Integrated the backend with a
+              legacy React-based CMS using EF Core's Database First approach,
+              overcoming limitations of the legacy CMS application and added
+              clean code principles.
+            </li>
+            <li>
+              Streamlined Lead Management: Integrated the backend with Microsoft
+              Dynamics CRM using RabbitMQ and a message bus to efficiently
+              capture and process marketing leads.
+            </li>
+          </ul>
+        </div>
+        <div class="bg-white rounded-lg shadow-lg p-6 mb-6">
+          <h3 class="font-bold text-blue-500">
+            Senior Dot Net Developer - Amplicade GmbH
+          </h3>
+          <p>Germany (Remote) | 05/2022 – 01/2023</p>
+          <ul class="list-disc pl-5">
+            <li>
+              Delivered a Scalable SaaS Solution: Led the development of a
+              Multitenant SaaS application for EFM Versicherungsmakler,
+              supporting over 700 agencies across 20 cities in Austria.
+            </li>
+            <li>
+              Integrated Legacy Systems: Integrated legacy APIs of insurance
+              company with the backend using Refit and background jobs within
+              the Asp.Net Boilerplate framework, synchronizing data with a
+              PostgreSQL database.
+            </li>
+            <li>
+              Facilitated Secure Data Storage and Transfer: Integrated AWS S3
+              for secure file storage and implemented protocols to stream data
+              securely to on-premise servers.
+            </li>
+            <li>
+              Collaborated on Full-Stack Development: Designed the database and
+              RESTful APIs in collaboration with the frontend team working on
+              Angular, ensuring seamless communication between systems.
+            </li>
+            <li>
+              Employed Microservices and DDD: Architected the system based on
+              Domain-Driven Design (DDD) and Microservices to ensure scalability
+              and maintainability.
+            </li>
+            <li>
+              Streamlined Deployment with Kubernetes and Docker: Collaborated in
+              containerizing the application using Kubernetes and Docker,
+              deploying to Azure App Services through automated GitLab
+              pipelines.
+            </li>
+            <li>
+              Reduced Deployment Time by 60%: Optimized deployment processes
+              through containerization and continuous integration practices.
+            </li>
+          </ul>
+        </div>
+        <div class="bg-white rounded-lg shadow-lg p-6 mb-6">
+          <h3 class="font-bold text-blue-500">
+            Senior Dot Net Developer - MAT Industry
+          </h3>
+          <p>Turkey – Iran (Remote) | 01/2021 - 05/2022</p>
+          <ul class="list-disc pl-5">
+            <li>
+              Enhanced Rehabilitation Efforts: Developed web-based applications
+              to manage water therapy devices using EasyModBus, which was for
+              improving patient rehabilitation and performance.
+            </li>
+            <li>
+              Engineered Active Training Systems: Designed and deployed custom
+              servers for end-effector systems to facilitate active training and
+              encourage patient self-activity during rehabilitation.
+            </li>
+            <li>
+              Improved Patient Gait Rehabilitation: Created management software
+              for robotic gait systems using EasyModBus, assisting therapists in
+              rehabilitating patients with irregular walking patterns.
+            </li>
+            <li>
+              Developed a Price Action Library: Created a custom library for
+              Price Action/Signal Detection, enabling synchronized market order
+              management across multiple trading platforms.
+            </li>
+            <li>
+              Built Algorithmic Trading UI: Architected a Windows Forms user
+              interface for back-testing and forward-testing custom algorithmic
+              trading strategies, leveraging broker APIs and subscription
+              network channels.
+            </li>
+            <li>
+              Launched Interactive Website: Developed and launched an
+              interactive website for product representation, ordering, and
+              customer service management, streamlining customer engagement and
+              sales. All integrated with internal device services and servers.
+            </li>
+          </ul>
+        </div>
+        <div class="bg-white rounded-lg shadow-lg p-6 mb-6">
+          <h3 class="font-bold text-blue-500">
+            Senior Dot Net Developer - Negin Nassaj Asia
+          </h3>
+          <p>Iran (Onsite) | 04/2015 - 10/2020</p>
+          <ul class="list-disc pl-5">
+            <li>
+              Reduced System Downtime by 70%: Refactored legacy applications
+              leading to a huge reduction in downtime of the on-premise servers
+              and usage of hardware resources.
+            </li>
+            <li>
+              Enhanced Application Performance: Upgraded legacy Fortran
+              software’s and C++ systems into .Net environment and SQL Server
+              databases resulting in significant performance improvements.
+            </li>
+            <li>
+              Pioneered a Revolutionary RCMS Platform: Developed an innovative
+              RCMS platform that expanded the client base in windows forms using
+              SOAP.
+            </li>
+            <li>
+              Managed different websites: Oversaw the development, deployment,
+              and maintenance of multiple client-facing and internal websites.
+              Responsibilities included optimizing website performance,
+              implementing security best practices, and ensuring seamless
+              integration with different systems. Successfully led a team of
+              junior developers in revamping website architectures to improve
+              user experience and accessibility.
+            </li>
+            <li>
+              Developed a full-stack ASP.NET project: Designed and built a
+              complete website for the company using the older .NET framework
+              and ASPX pages, while continuously managing the servers and adding
+              new features as a full-stack developer over the years.
+            </li>
+          </ul>
+        </div>
+        <div class="bg-white rounded-lg shadow-lg p-6">
+          <h3 class="font-bold text-blue-500">
+            Dot Net Developer - Atra Dadepardaz
+          </h3>
+          <p>Iran (Onsite) | 07/2013 - 04/2015</p>
+          <ul class="list-disc pl-5">
+            <li>
+              Achieved 99.9% Data Synchronization Accuracy: Developed a robust
+              application for hourly updates of Access Databases with tons of
+              txt, csv, excel files using VB.Net and later by moving to C#
+              language and .Net Framework 4.5
+            </li>
+            <li>
+              Improved Content Update Efficiency: Optimized CRUD operations and
+              database interactions in Windows Forms applications using ADO.Net
+              and SQL queries.
+            </li>
+            <li>
+              Increased System Scalability: Leveraged multithreading to handle
+              increased data loads in Windows Forms application which was using
+              SOAP to fetch data from servers.
+            </li>
+            <li>
+              Reduced Downtime: Developed a reliable server-side application
+              that improved deployment of image and video files. The application
+              was a Windows Service that targets the IO and using System.Drawing
+              library of .Net Framework 4.5 to compress files on air.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="education" class="mb-12">
+        <h2 class="text-3xl font-bold mb-4 text-blue-600 text-center">
+          Education & Certifications
+        </h2>
+        <div class="bg-white rounded-lg shadow-lg p-6">
+          <ul class="list-disc pl-5">
+            <li>RU102N: Redis for .NET Developers, Redis University (2023)</li>
+            <li>
+              Certificate in Information Systems Management, Aptech Worldwide,
+              Tabriz, Iran (Distinction Oct 2008)
+            </li>
+            <li>
+              Professional Certificates in Computer Science (Levels 1 & 2), Iran
+              (2006)
+            </li>
+            <li>
+              Professional Certificate in Visual Basic Programming, Iran (2006)
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer
+      class="bg-gradient-to-r from-blue-500 to-purple-600 p-6 text-white mt-12"
+    >
+      <div class="container mx-auto text-center">
+        <p>
+          Location: Turkey/Istanbul | Phone: +90 541 838 2183 |
+          <a href="https://heidari.io/" class="hover:underline">heidari.io</a> |
+          Email:
+          <a href="mailto:reza@heidari.io" class="hover:underline"
+            >reza@heidari.io</a
+          >
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
