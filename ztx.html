@@ -1,1 +1,29 @@
-true
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hardware ID Validation</title>
+  </head>
+  <body>
+    <script>
+      // List of valid hardware IDs
+      const validHardwareIds = ["BFEBFBFF000906A3"];
+
+      // Function to get query parameter by name
+      function getQueryParameter(name) {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get(name);
+      }
+
+      // Extract the hardware ID from the query parameters
+      const hardwareId = getQueryParameter("hardwareId");
+
+      // Determine the response
+      const response = validHardwareIds.includes(hardwareId) ? "true" : "false";
+
+      // Send the response as plain text
+      document.body.innerText = response;
+    </script>
+  </body>
+</html>
